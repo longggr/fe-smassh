@@ -1,0 +1,10 @@
+{
+  "description": "Shop badminton gear, manage orders, and track your account in a complete storefront, while admins oversee products, inventory, customers, and sales.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

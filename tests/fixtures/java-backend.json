@@ -1,0 +1,44 @@
+{
+  "auth": { "token": "fixture-current-jwt", "authenticated": true },
+  "cartMutation": {
+    "cartToken": "11111111-1111-4111-8111-111111111111",
+    "cart": {
+      "items": [{
+        "id": 1, "variantId": 12, "sku": "FIXTURE-4U", "size": "4U", "quantity": 2,
+        "availableStock": 4, "variantStatus": "ACTIVE", "inventoryStatus": "IN_STOCK",
+        "productId": 7, "productName": "Fixture racket", "productSlug": "fixture-racket",
+        "productStatus": "ACTIVE", "unitPrice": 2000000, "salePrice": 1800000,
+        "effectivePrice": 1800000, "lineTotal": 3600000,
+        "colorId": 10, "colorName": "Black", "hexCode": "#111111", "thumbnailUrl": null,
+        "stockInsufficient": false, "unavailable": false
+      }],
+      "totalItems": 1, "totalQuantity": 2, "subtotal": 3600000, "issueCount": 0
+    }
+  },
+  "address": {
+    "id": 1, "recipientName": "Fixture Player", "phone": "0901234567", "line1": "123 Fixture Street",
+    "provinceId": 202, "provinceName": "Fixture Province", "districtId": 1442, "districtName": "Fixture District",
+    "wardCode": "20101", "wardName": "Fixture Ward", "primaryAddress": "PRIMARY"
+  },
+  "product": {
+    "id": 7, "name": "Fixture racket", "slug": "fixture-racket", "type": "RACKET",
+    "productStatus": "ACTIVE", "price": 2000000, "salePrice": 1800000,
+    "brand": { "id": 2, "name": "Yonex" }, "category": { "id": 1, "name": "Rackets" },
+    "attributes": [{ "id": 1, "attrName": "weight", "attrValue": "83g" }],
+    "colors": [{
+      "id": 10, "colorName": "Black", "hexCode": "#111111", "displayOrder": 0,
+      "images": [{ "id": 1, "url": "https://example.test/fixture.jpg", "providerPublicId": "fixture/image", "isMain": "MAIN", "orderIndex": 0 }],
+      "variants": [{ "id": 12, "sku": "FIXTURE-4U", "size": "4U", "stock": 4, "active": "ACTIVE", "inventoryStatus": "IN_STOCK" }]
+    }]
+  },
+  "order": {
+    "id": 999, "orderStatus": "PROCESSING", "paymentMethod": "COD", "shippingMethod": "STANDARD",
+    "shippingRecipientName": "Fixture Player", "shippingPhone": "0901234567", "shippingLine1": "123 Fixture Street",
+    "shippingProvinceId": 202, "shippingProvinceName": "Fixture Province", "shippingDistrictId": 1442,
+    "shippingDistrictName": "Fixture District", "shippingWardCode": "20101", "shippingWardName": "Fixture Ward",
+    "subtotal": 3600000, "shippingCost": 32000, "discount": 0, "total": 3632000, "stockRestored": false,
+    "items": [{ "id": 1, "variantId": 12, "productName": "Fixture racket", "sku": "FIXTURE-4U", "unitPrice": 1800000, "quantity": 2, "totalPrice": 3600000 }]
+  },
+  "paymentSuccess": { "orderId": 999, "txnRef": "999_fixture", "amount": 3632000, "status": "SUCCESS", "responseCode": "00", "transactionNo": "fixture", "message": "Verified fixture" },
+  "paymentFailure": { "status": "FAILED", "message": "Invalid signature fixture" }
+}
